@@ -77,9 +77,14 @@ body{
     color: white;
     padding: 10px;
     border-radius: 30px;
+    transition: 1s;
+    cursor: pointer;
+
 }
 .categories p:hover{
-    background-color: blueviolet;
+    background-color: violet;
+    transition: 1s;
+    transform: scale(1.1);   
 }
 
 .sales img{
@@ -94,6 +99,17 @@ body{
     top: 35%;
     left: 10%;
     background-color: transparent;
+    animation-name: cp;
+    animation-duration: 2s;
+}
+@keyframes cp{
+    0%{
+      transform: scale(0);  
+
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 .recommended{
     padding: 10px;
